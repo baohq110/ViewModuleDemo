@@ -1,6 +1,6 @@
 package com.dev.bao.itemviewdemo.abs
 
-interface ItemViewContainer : ItemView {
+interface ItemViewContainer<T: ItemView> : ItemView {
 
-    fun addChildView(item: ItemView)
+    fun addChildView(item: T)
 }

@@ -5,11 +5,11 @@ import com.dev.bao.itemviewdemo.abs.ItemView
 import com.dev.bao.itemviewdemo.abs.ItemViewContainer
 
 
-abstract class AbsViewContainer(val context: Context): ItemViewContainer {
+abstract class AbsViewContainer<T: ItemView>(context: Context): AbsItemView(context), ItemViewContainer<T> {
 
-    val childViews: MutableList<ItemView> = mutableListOf()
+    val childViews: MutableList<T> = mutableListOf()
 
-    override fun addChildView(item: ItemView) {
+    override fun addChildView(item: T) {
         childViews.add(item)
     }
 
