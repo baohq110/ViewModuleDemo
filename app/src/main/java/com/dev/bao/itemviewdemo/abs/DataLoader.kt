@@ -1,4 +1,4 @@
-package com.dev.bao.itemviewdemo
+package com.dev.bao.itemviewdemo.abs
 
 interface DataLoader {
 

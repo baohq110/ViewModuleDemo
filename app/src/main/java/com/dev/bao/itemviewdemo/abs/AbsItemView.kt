@@ -1,9 +1,10 @@
-package com.dev.bao.itemviewdemo
+package com.dev.bao.itemviewdemo.abs
 
 import android.app.Service
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
+import com.dev.bao.itemviewdemo.abs.ItemView
 
 abstract class AbsItemView(val context: Context): ItemView {
 

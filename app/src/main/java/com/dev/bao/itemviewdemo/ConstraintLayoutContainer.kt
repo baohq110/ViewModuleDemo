@@ -5,8 +5,9 @@ import android.content.Context
 import android.support.constraint.ConstraintLayout
 import android.view.LayoutInflater
 import android.view.View
+import com.dev.bao.itemviewdemo.abs.AbsViewContainer
 
-class ContrainLayoutContainer(context: Context): AbsViewContainer(context) {
+class ConstraintLayoutContainer(context: Context): AbsViewContainer(context) {
 
     override fun renderView(): View {
         val inflater = context.getSystemService(Service.LAYOUT_INFLATER_SERVICE) as LayoutInflater
