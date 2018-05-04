@@ -4,13 +4,14 @@ import android.app.Service
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import com.dev.bao.itemviewdemo.abs.ItemView
 
 abstract class AbsItemView(val context: Context): ItemView {
 
 
-    override fun renderView(): View {
-        return inflater.inflate(layoutId, null, false)
+    override fun renderView(container: ViewGroup): View {
+        return inflater.inflate(layoutId, container, false)
     }
 
     val inflater: LayoutInflater

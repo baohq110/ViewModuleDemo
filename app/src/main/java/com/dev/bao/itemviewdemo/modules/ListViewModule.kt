@@ -4,11 +4,11 @@ import android.content.Context
 import com.dev.bao.itemviewdemo.R
 import com.dev.bao.itemviewdemo.abs.AbsItemView
 
-class HeaderViewModule(context: Context): AbsItemView(context) {
+class ListViewModule(context: Context): AbsItemView(context) {
 
     override val rootViewId: Int
-        get() = R.id.headerRootView
+        get() = R.id.listViewRootView
 
     override val layoutId: Int
-        get() = R.layout.module_head_view
+        get() = R.layout.module_list_view
 }
